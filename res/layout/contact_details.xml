@@ -1,0 +1,279 @@
+<LinearLayout 
+    	android:id="@+id/linearLayout1"
+        android:weightSum="20"
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+    	xmlns:tools="http://schemas.android.com/tools"
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+        tools:context="com.example.contacts.ContactDetails" >
+    
+    <FrameLayout
+        android:id="@+id/frameLayout1"
+        android:layout_weight="8"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@drawable/ic_launcher1"
+            android:background="#FFFFCC" />
+        
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_weight="6"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="vertical" >
+        
+	    <LinearLayout
+	        android:id="@+id/linearLayout21"
+	        android:layout_weight="1"
+	        android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+	        android:weightSum="7"
+	        android:orientation="vertical"
+	        android:background="#FFFFBB" >
+	    
+		    <LinearLayout 
+		        android:id="@+id/linearLayout211"
+		        android:layout_weight="1"
+		        android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:weightSum="3" >
+		        
+			    <TextView
+			        android:id="@+id/textView11"
+			        android:layout_weight="2"
+			        android:layout_width="fill_parent"
+            		android:layout_height="wrap_content"
+			        android:text="Name" />
+			
+			    <TextView
+			        android:id="@+id/textView12"
+			        android:layout_weight="1"
+			        android:layout_width="fill_parent"
+            		android:layout_height="wrap_content"
+			        android:inputType="textPersonName" />
+			 
+			 </LinearLayout>
+		 
+		    <LinearLayout 
+		        android:id="@+id/linearLayout212"
+		        android:layout_weight="1"
+		        android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:weightSum="3" >
+			    
+			    <TextView
+			        android:id="@+id/textView21"
+			        android:layout_weight="2"
+			        android:layout_width="fill_parent"
+            		android:layout_height="wrap_content"
+			        android:text="Phone No." />
+			
+			    <TextView
+			        android:id="@+id/textView22"
+			        android:layout_weight="1"
+			        android:layout_width="fill_parent"
+            		android:layout_height="wrap_content"
+			        android:inputType="phone" />
+			    
+			</LinearLayout>
+		
+			<LinearLayout 
+		        android:id="@+id/linearLayout213"
+		        android:layout_weight="1"
+		        android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:weightSum="3" >
+		        
+		    	<TextView
+			        android:id="@+id/textView31"
+			        android:layout_weight="2"
+			        android:layout_width="fill_parent"
+            		android:layout_height="wrap_content"
+			        android:text="Address" />
+			
+			    <TextView
+			        android:id="@+id/textView32"
+			        android:layout_weight="1"
+			        android:layout_width="fill_parent"
+            		android:layout_height="wrap_content"
+			        android:inputType="textPostalAddress" />
+			
+			</LinearLayout>
+			 
+			<LinearLayout 
+		        android:id="@+id/linearLayout214"
+		        android:layout_weight="1"
+		        android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:weightSum="3" >
+			    
+			
+			    <TextView
+			        android:id="@+id/textView41"
+			        android:layout_weight="2"
+			        android:layout_width="fill_parent"
+            		android:layout_height="wrap_content"
+			        android:text="Email" />
+			
+			    <TextView
+			        android:id="@+id/textView42"
+			        android:layout_weight="1"
+			        android:layout_width="fill_parent"
+            		android:layout_height="wrap_content"
+			        android:inputType="textEmailAddress" />
+			 
+			</LinearLayout>
+			 
+		    <LinearLayout
+		       	android:id="@+id/linearLayout215"
+		        android:layout_weight="1"
+		        android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:weightSum="3" >
+			    
+			    <TextView
+				    android:id="@+id/textView51"
+				    android:layout_weight="2"
+				    android:layout_width="fill_parent"
+	            	android:layout_height="wrap_content"
+				    android:text="Gender" />
+			    
+			    <TextView 
+			        android:id="@+id/textView52"
+			        android:layout_weight="1"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content" />
+		         
+		    </LinearLayout>
+		    
+		    <LinearLayout
+		       	android:id="@+id/linearLayout216"
+		        android:layout_weight="1"
+		        android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:weightSum="3" >
+			    
+			    <TextView
+				    android:id="@+id/textView61"
+				    android:layout_weight="2"
+				    android:layout_width="fill_parent"
+	            	android:layout_height="wrap_content"
+				    android:text="Circle" />
+			    
+			    <TextView 
+			        android:id="@+id/textView62"
+			        android:layout_weight="1"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content" />
+			    
+			</LinearLayout>
+			
+		    <LinearLayout
+		       	android:id="@+id/linearLayout217"
+		        android:layout_weight="1"
+		        android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:weightSum="3" >
+			    
+			    <TextView
+				    android:id="@+id/textView71"
+				    android:layout_weight="2"
+				    android:layout_width="fill_parent"
+	            	android:layout_height="wrap_content"
+				    android:text="Birthdate" />
+			    
+			    <TextView 
+			        android:id="@+id/textView72"
+			        android:layout_weight="1"
+			        android:layout_width="fill_parent"
+			        android:layout_height="wrap_content" />
+			    
+			</LinearLayout>
+	 
+		</LinearLayout>
+		
+	</LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_weight="6"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:weightSum="2" >
+        
+        <LinearLayout
+        android:id="@+id/linearLayout31"
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+        
+        <Button
+            android:id="@+id/call"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Call"
+            android:layout_gravity="left"
+            android:background="#DDDDDD" />
+        
+        <Button
+            android:id="@+id/text"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Text"
+            android:layout_gravity="left"
+            android:background="#CCCCCC" />
+        
+        </LinearLayout>
+        
+        <LinearLayout
+        android:id="@+id/linearLayout32"
+        android:layout_weight="1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+        
+        <Button 
+            android:id="@+id/edit"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Edit"
+            android:layout_gravity="right"
+            android:background="#CCCCCC" />	
+            
+        <Button 
+            android:id="@+id/delete"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:layout_gravity="right"
+            android:background="#DDDDDD" />		 
+        
+        </LinearLayout>
+        
+    </LinearLayout>
+        
+</LinearLayout>

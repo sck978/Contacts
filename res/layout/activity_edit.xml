@@ -1,0 +1,281 @@
+<LinearLayout 
+    	android:id="@+id/linearLayout1"
+        android:weightSum="20"
+        android:orientation="vertical"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+    	xmlns:tools="http://schemas.android.com/tools"
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+        tools:context="com.example.contacts.EditActivity" >
+    
+    <FrameLayout
+        android:id="@+id/frameLayout1"
+        android:layout_weight="8"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:src="@drawable/ic_launcher1"
+            android:background="#FFFFCC" />
+        
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_weight="8"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2"
+        android:orientation="vertical" >
+        
+	    <LinearLayout
+	        android:id="@+id/linearLayout21"
+	        android:layout_weight="1"
+	        android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+	        android:weightSum="5"
+	        android:orientation="vertical"
+	        android:background="#FFFFBB" >
+	    
+		    <LinearLayout 
+		        android:id="@+id/linearLayout211"
+		        android:layout_weight="1"
+		        android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:weightSum="3" >
+		        
+			    <TextView
+			        android:id="@+id/textView1"
+			        android:layout_weight="2"
+			        android:layout_width="fill_parent"
+            		android:layout_height="wrap_content"
+			        android:text="Name" />
+			
+			    <EditText
+			        android:id="@+id/editText1"
+			        android:layout_weight="1"
+			        android:layout_width="fill_parent"
+            		android:layout_height="wrap_content"
+			        android:inputType="textPersonName" />
+			 
+			 </LinearLayout>
+		 
+		    <LinearLayout 
+		        android:id="@+id/linearLayout212"
+		        android:layout_weight="1"
+		        android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:weightSum="3" >
+			    
+			    <TextView
+			        android:id="@+id/textView2"
+			        android:layout_weight="2"
+			        android:layout_width="fill_parent"
+            		android:layout_height="wrap_content"
+			        android:text="Phone No." />
+			
+			    <EditText
+			        android:id="@+id/editText2"
+			        android:layout_weight="1"
+			        android:layout_width="fill_parent"
+            		android:layout_height="wrap_content"
+			        android:inputType="phone" />
+			    
+			</LinearLayout>
+		
+			<LinearLayout 
+		        android:id="@+id/linearLayout213"
+		        android:layout_weight="1"
+		        android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:weightSum="3" >
+		        
+		    	<TextView
+			        android:id="@+id/textView3"
+			        android:layout_weight="2"
+			        android:layout_width="fill_parent"
+            		android:layout_height="wrap_content"
+			        android:text="Address" />
+			
+			    <EditText
+			        android:id="@+id/editText3"
+			        android:layout_weight="1"
+			        android:layout_width="fill_parent"
+            		android:layout_height="wrap_content"
+			        android:inputType="textPostalAddress" />
+			
+			</LinearLayout>
+			 
+			<LinearLayout 
+		        android:id="@+id/linearLayout214"
+		        android:layout_weight="1"
+		        android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:weightSum="3" >
+			    
+			
+			    <TextView
+			        android:id="@+id/textView4"
+			        android:layout_weight="2"
+			        android:layout_width="fill_parent"
+            		android:layout_height="wrap_content"
+			        android:text="Email" />
+			
+			    <EditText
+			        android:id="@+id/editText4"
+			        android:layout_weight="1"
+			        android:layout_width="fill_parent"
+            		android:layout_height="wrap_content"
+			        android:inputType="textEmailAddress" />
+			 
+			</LinearLayout>
+			 
+		    <LinearLayout
+		       android:id="@+id/linearLayout215"
+		        android:layout_weight="1"
+		        android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+		        android:orientation="horizontal"
+		        android:weightSum="3" >
+			    
+		    <TextView
+			        android:id="@+id/textView7"
+			        android:layout_weight="2"
+			        android:layout_width="fill_parent"
+            		android:layout_height="wrap_content"
+			        android:text="Gender" />
+		    
+		    <Spinner 
+		        android:id="@+id/spinner"
+		        android:layout_weight="1"
+		        android:layout_width="fill_parent"
+		        android:layout_height="wrap_content"
+		        android:drawSelectorOnTop="true"
+		        android:entries="@array/gender" />
+		         
+		    </LinearLayout>
+	 
+		</LinearLayout>
+		
+	    <LinearLayout
+	        android:id="@+id/linearLayout22"
+	        android:layout_weight="1"
+	        android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+	        android:weightSum="2"
+	        android:orientation="horizontal"
+	        android:background="#FFFFAA" >
+		
+	        <LinearLayout
+	            android:id="@+id/linearLayout221"
+	        	android:layout_weight="1"
+	        	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+	        	android:weightSum="3"
+	        	android:orientation="vertical" >
+		        
+	            <RadioGroup
+	                android:id="@+id/radioGroup1" 
+		           	android:layout_weight="3"
+		           	android:layout_width="fill_parent"
+	            	android:layout_height="wrap_content"
+	            	android:weightSum="3"
+	            	android:orientation="vertical" >
+		           	
+		           	<RadioButton 
+		            android:id="@+id/radioButton1"
+		            android:layout_weight="1"
+		            android:layout_width="fill_parent"
+	            	android:layout_height="wrap_content"
+		            android:text="Friends" />
+		        	
+		        	<RadioButton 
+		            android:id="@+id/radioButton2"
+		            android:layout_weight="1"
+		            android:layout_width="fill_parent"
+	            	android:layout_height="wrap_content"
+		            android:text="Family" />
+		        
+		       		<RadioButton 
+		            android:id="@+id/radioButton3"
+		            android:layout_weight="1"
+		            android:layout_width="fill_parent"
+	            	android:layout_height="wrap_content"
+		            android:text="Others" />
+	       		
+	       		</RadioGroup>
+	            
+	        </LinearLayout>
+	        
+	        <LinearLayout
+	            android:id="@+id/linearLayout222"
+	        	android:layout_weight="1"
+	        	android:layout_width="fill_parent"
+            	android:layout_height="wrap_content"
+	        	android:weightSum="3"
+	        	android:orientation="vertical" >
+	       		
+	        	<TextView
+		        	android:id="@+id/textView5"
+		        	android:layout_weight="1"
+		        	android:layout_width="fill_parent"
+            		android:layout_height="wrap_content"
+		        	android:text="	Remind me on Birthday" />
+	        
+	        	<Button
+	            	android:id="@+id/button3"
+	            	android:layout_weight="1"
+	            	android:layout_width="fill_parent"
+            		android:layout_height="wrap_content"
+            		android:onClick="setDate"
+            		android:text="Set Date" />
+	        	
+	        	<TextView
+		        	android:id="@+id/textView6"
+		        	android:layout_weight="1"
+		        	android:layout_width="fill_parent"
+            		android:layout_height="wrap_content"
+		        	android:text="			mm/dd/yyyy" />
+	       		
+	        </LinearLayout>
+            
+    	</LinearLayout>
+    
+    </LinearLayout>
+    
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_weight="4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="2" >
+        
+        <Button
+            android:id="@+id/button1"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Submit"
+            android:layout_gravity="left"
+            android:background="#DDDDDD" />
+        
+        <Button 
+            android:id="@+id/button2"
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="Clear"
+            android:layout_gravity="right"
+            android:background="#CCCCCC" />
+        
+    </LinearLayout>
+        
+</LinearLayout>
